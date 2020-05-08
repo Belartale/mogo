@@ -1,4 +1,32 @@
-body {
-    position: relative;
-    height: 100px;
+@import "null-style.scss";
+
+//todo begin
+//! all
+.wrapper {
+    max-width: 1202px;
+    margin: 0 auto;
+}
+
+//! variables
+$font-mont: "Montserrat", sans-serif;
+$color-write: #ffffff;
+
+//! mixims
+
+//! header
+header {
+    background: linear-gradient(#e88182, #f1d98a);
+}
+.logo {
+    p {
+        font: bold 30px $font-mont;
+    }
+}
+nav {
+    margin-top: 30px;
+    position: fixed;
+    ul {
+        list-style-type: none;
+        color: red;
+    }
 }
