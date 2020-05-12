@@ -1,0 +1,46 @@
+//! all
+.wrapper {
+    max-width: 1202px;
+    margin: 0 auto;
+}
+//! fonts
+.over-title {
+    @extend %over-title;
+}
+.title {
+    @extend %title;
+}
+.center {
+    text-align: center;
+}
+//! $variables
+$font-one: "Montserrat", sans-serif;
+$font-two: "Kaushan Script", cursive;
+
+//! color
+$color-write: white;
+$color-black: black;
+
+//! @mixim
+/* 
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+    .box { @include transform(rotate(30deg)); } 
+*/
+
+//! @extend
+%over-title {
+    padding-bottom: 110px;
+    font-family: $font-two;
+    font-size: 24px;
+    color: $color-black;
+}
+%title {
+    margin-bottom: 43px;
+    font-family: $font-one;
+    font-size: 30px;
+    color: $color-black;
+}
