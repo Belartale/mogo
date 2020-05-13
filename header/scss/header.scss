@@ -69,5 +69,12 @@ header {
         color: $color-write;
     }
     .lines-two-header {
+        div {
+            position: relative;
+            top: -100px;
+            height: 3px;
+            width: 260px;
+            background-color: $color-write;
+        }
     }
 }
