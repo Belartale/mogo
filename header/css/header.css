@@ -170,13 +170,13 @@ header nav .d ul li a img {
 header .big-over-title {
   padding-top: 220px;
   padding-bottom: 35px;
-  font-size: 72px;
+  font-size: calc(72px - 1vw);
   color: white;
 }
 
 header .big-title {
   padding-bottom: 70px;
-  font-size: 150px;
+  font-size: calc(150px - 1vw);
   text-transform: uppercase;
   line-height: 140px;
   color: white;
@@ -199,9 +199,45 @@ header .btn-header {
 }
 
 header .lines-two-header div {
-  position: relative;
-  top: -100px;
+  margin: 0px 15px;
+  display: inline-block;
   height: 3px;
   width: 260px;
   background-color: white;
+}
+
+header .lines-two-header div:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, red), color-stop(99%, white));
+  background: linear-gradient(90deg, red 1%, white 99%);
+}
+
+header .lines-two-text-header {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+header .lines-two-text-header p {
+  display: inline-block;
+}
+
+header .lines-two-text-header p span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header .lines-two-text-header .p1 {
+  margin-left: 15px;
+}
+
+header .lines-two-text-header .p2 {
+  margin-left: 215px;
+}
+
+header .lines-two-text-header .p3 {
+  margin-left: 205px;
+}
+
+header .lines-two-text-header .p4 {
+  margin-left: 205px;
 }

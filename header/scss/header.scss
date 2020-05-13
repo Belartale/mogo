@@ -10,7 +10,6 @@ header {
         opacity: 0.9;
         z-index: 1;
     }
-
     .logo {
         font: bold 30px $font-one;
         color: $color-write;
@@ -38,18 +37,17 @@ header {
             }
         }
     }
-
     .big-over-title {
         @extend %over-title;
         padding-top: 220px;
         padding-bottom: 35px;
-        font-size: 72px;
+        font-size: calc(72px - 1vw);
         color: $color-write;
     }
     .big-title {
         @extend %title;
         padding-bottom: 70px;
-        font-size: 150px;
+        font-size: calc(150px - 1vw);
         text-transform: uppercase;
         line-height: 140px;
         color: $color-write;
@@ -70,11 +68,44 @@ header {
     }
     .lines-two-header {
         div {
-            position: relative;
-            top: -100px;
+            margin: 0px 15px;
+            display: inline-block;
             height: 3px;
             width: 260px;
             background-color: $color-write;
+            &:hover {
+                background: linear-gradient(90deg, red 1%, $color-write 99%);
+            }
         }
     }
+    .lines-two-text-header {
+        font-family: $font-one;
+        text-transform: uppercase;
+        color: $color-write;
+        p {
+            display: inline-block;
+            span {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .p1 {
+            margin-left: 15px;
+        }
+        .p2 {
+            margin-left: 215px;
+        }
+        .p3 {
+            margin-left: 205px;
+        }
+        .p4 {
+            margin-left: 205px;
+        }
+    }
+}
+@media (max-width: 940px) {
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 470px) {
 }
