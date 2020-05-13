@@ -10,45 +10,64 @@ header {
         opacity: 0.9;
         z-index: 1;
     }
-}
-.logo {
-    font: bold 30px $font-one;
-    color: $color-write;
-}
-nav {
-    margin-top: 30px;
-    position: fixed;
-    ul {
-        list-style-type: none;
-        li {
-            display: inline-block;
-            margin-left: 55px;
-            a {
-                text-transform: uppercase;
-                font-family: $font-one;
-                font-size: 14px;
-                color: $color-write;
-                img {
+
+    .logo {
+        font: bold 30px $font-one;
+        color: $color-write;
+    }
+    nav {
+        margin-top: 30px;
+        position: fixed;
+        .d {
+            float: right;
+            ul {
+                list-style-type: none;
+                li {
                     display: inline-block;
+                    margin-left: 55px;
+                    a {
+                        text-transform: uppercase;
+                        font-family: $font-one;
+                        font-size: 14px;
+                        color: $color-write;
+                        img {
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         }
     }
-}
-.nav-indent {
-    margin-left: 100px;
-}
-.big-over-title {
-    @extend %over-title;
-    padding-top: 230px;
-    padding-bottom: 35px;
-    font-size: 72px;
-    color: $color-write;
-}
-.big-title {
-    @extend %title;
-    padding-bottom: 75px;
-    font-size: 150px;
-    text-transform: uppercase;
-    color: $color-write;
+
+    .big-over-title {
+        @extend %over-title;
+        padding-top: 220px;
+        padding-bottom: 35px;
+        font-size: 72px;
+        color: $color-write;
+    }
+    .big-title {
+        @extend %title;
+        padding-bottom: 70px;
+        font-size: 150px;
+        text-transform: uppercase;
+        line-height: 140px;
+        color: $color-write;
+    }
+    .line-one-header {
+        height: 3px;
+        width: 60px;
+        background-color: $color-write;
+    }
+    .btn-header {
+        margin-top: 50px;
+        margin-bottom: 160px;
+        display: inline-block;
+        padding: 12px 30px;
+        border: solid 2px $color-write;
+        text-transform: uppercase;
+        color: $color-write;
+    }
+    .lines-two-header {
+    }
 }
