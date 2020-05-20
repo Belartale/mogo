@@ -1,0 +1,133 @@
+@import "null-style.scss"; //Сброс стилей
+@import "general-classes.scss"; //Все классы
+
+//! begin
+//! numbers
+.numbers {
+    div {
+        background-color: $color-blue;
+        .wrapper {
+            .numbers-row {
+                display: flex;
+                div {
+                    flex: 1;
+                    padding-top: 90px;
+                    padding-bottom: 90px;
+                    text-align: center;
+                    .numbers-number {
+                        padding-bottom: 0px;
+                        @extend %title;
+                        font-weight: bold;
+                        @include adaptiv-font(72, 25);
+                        color: $color-write;
+                    }
+                    .numbers-text {
+                        padding-bottom: 0px;
+                        @extend %title;
+                        @include adaptiv-font(14, 8);
+                        text-transform: uppercase;
+                        color: $color-write;
+                    }
+                }
+                .numbers-line {
+                    border-left: solid 1px $color-write;
+                    border-right: solid 1px $color-write;
+                }
+            }
+        }
+    }
+}
+//! @media
+@media (max-width: 1370px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 1202px;
+                .numbers-row {
+                    div {
+                        .numbers-number {
+                        }
+                        .numbers-text {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1202px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 970px;
+                .numbers-row {
+                    div {
+                        padding-top: 90px;
+                        padding-bottom: 90px;
+                        .numbers-number {
+                        }
+                        .numbers-text {
+                            padding-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 940px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 640px;
+                .numbers-row {
+                    div {
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                        .numbers-number {
+                        }
+                        .numbers-text {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 470px;
+                .numbers-row {
+                    div {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        .numbers-number {
+                        }
+                        .numbers-text {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 360px;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .numbers {
+        div {
+            .wrapper {
+                max-width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapper {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.line-under-title {
+  margin: 0 auto;
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+}
+
+.text-under-line {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0 50px;
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.over-title {
+  padding-bottom: 25px;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .over-title {
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .over-title {
+    font-size: calc(16px + 8 * (100vw / 1202));
+  }
+}
+
+.title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
+    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .title, .numbers div .wrapper .numbers-row div .numbers-number, .numbers div .wrapper .numbers-row div .numbers-text {
+    font-size: calc(20px + 10 * (100vw / 1202));
+  }
+}
+
+.text-under-line {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  .text-under-line {
+    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .text-under-line {
+    font-size: calc(10px + 5 * (100vw / 1202));
+  }
+}
+
+.numbers div {
+  background-color: #95e1d3;
+}
+
+.numbers div .wrapper .numbers-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.numbers div .wrapper .numbers-row div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.numbers div .wrapper .numbers-row div .numbers-number {
+  padding-bottom: 0px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .numbers div .wrapper .numbers-row div .numbers-number {
+    font-size: calc(25px + 79.9 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .numbers div .wrapper .numbers-row div .numbers-number {
+    font-size: calc(25px + 47 * (100vw / 1202));
+  }
+}
+
+.numbers div .wrapper .numbers-row div .numbers-text {
+  padding-bottom: 0px;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .numbers div .wrapper .numbers-row div .numbers-text {
+    font-size: calc(8px + 10.2 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .numbers div .wrapper .numbers-row div .numbers-text {
+    font-size: calc(8px + 6 * (100vw / 1202));
+  }
+}
+
+.numbers div .wrapper .numbers-row .numbers-line {
+  border-left: solid 1px white;
+  border-right: solid 1px white;
+}
+
+@media (max-width: 1370px) {
+  .numbers div .wrapper {
+    max-width: 1202px;
+  }
+}
+
+@media (max-width: 1202px) {
+  .numbers div .wrapper {
+    max-width: 970px;
+  }
+  .numbers div .wrapper .numbers-row div {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .numbers div .wrapper .numbers-row div .numbers-text {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 940px) {
+  .numbers div .wrapper {
+    max-width: 640px;
+  }
+  .numbers div .wrapper .numbers-row div {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .numbers div .wrapper {
+    max-width: 470px;
+  }
+  .numbers div .wrapper .numbers-row div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+  .numbers div .wrapper {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .numbers div .wrapper {
+    max-width: 300px;
+  }
+}
