@@ -6,11 +6,11 @@
 //! begin
 //! header
 header {
-    background: url(../img/header-background.png) no-repeat center;
     .gradient {
-        background: linear-gradient(#e88182, #f1d98a) no-repeat;
-        opacity: 0.9;
-        z-index: 1;
+        background: linear-gradient($), url(../img/header-background.png);
+        background-size: cover;
+        background-position: center;
+
         .wrapper {
             nav {
                 top: 30px;

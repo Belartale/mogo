@@ -345,15 +345,11 @@ select {
   }
 }
 
-header {
-  background: url(../img/header-background.png) no-repeat center;
-}
-
 header .gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#e88182), to(#f1d98a)) no-repeat;
-  background: linear-gradient(#e88182, #f1d98a) no-repeat;
-  opacity: 0.9;
-  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(232, 129, 130, 0.9)), to(rgba(241, 217, 138, 0.9))), url(../img/header-background.png);
+  background: linear-gradient(rgba(232, 129, 130, 0.9), rgba(241, 217, 138, 0.9)), url(../img/header-background.png);
+  background-size: cover;
+  background-position: center;
 }
 
 header .gradient .wrapper nav {
