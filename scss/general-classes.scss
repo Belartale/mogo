@@ -6,10 +6,11 @@ $font-three: "Roboto", sans-serif;
 $color-write: white;
 $color-black: black;
 $color-red: #f38181;
+$color-yellow: #fce38a;
 $color-gray: #999999;
 $color-blue: #95e1d3;
 
-$gradient: linear-gradient(rgba(232, 129, 130, 0.9), rgba(241, 217, 138, 0.9))
+$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9))
     no-repeat;
 //! all
 $maxWidth: 1202;

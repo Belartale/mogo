@@ -1,7 +1,5 @@
 @import "null-style.scss"; //Сброс стилей
 @import "general-classes.scss"; //Все классы
-@import "null-style.scss"; //Сброс стилей
-@import "general-classes.scss"; //Все классы
 
 //! begin
 //! header
@@ -10,11 +8,11 @@ header {
         background: $gradient, url(../img/header-background.png);
         background-size: cover;
         background-position: center;
-
         .wrapper {
             nav {
+                z-index: 1000;
                 top: 30px;
-                position: fixed;
+                position: absolute;
                 width: 100%;
                 .a {
                     .logo {
@@ -23,10 +21,10 @@ header {
                         color: $color-write;
                     }
                 }
-                #switch {
+                #menu {
                     display: none;
                 }
-                #switch:checked ~ .ul {
+                #menu:checked ~ ul {
                     display: block;
                 }
                 .burger {
@@ -39,6 +37,7 @@ header {
                     }
                 }
                 ul {
+                    max-width: 1000px;
                     position: relative;
                     bottom: 30px;
                     left: 450px;
@@ -50,8 +49,12 @@ header {
                             font-family: $font-one;
                             @include adaptiv-font(14, 8);
                             color: $color-write;
+                            &:hover {
+                                padding-bottom: 10px;
+                                border-bottom: solid 3px $color-yellow;
+                                color: $color-yellow;
+                            }
                             img {
-                                display: inline-block;
                             }
                         }
                     }
@@ -110,8 +113,8 @@ header {
                     &:hover {
                         background: linear-gradient(
                             90deg,
-                            red 1%,
-                            $color-write 99%
+                            $color-red 35%,
+                            $color-write 0px
                         );
                     }
                 }
@@ -126,28 +129,6 @@ header {
         .gradient {
             .wrapper {
                 max-width: 1202px;
-                nav {
-                    .a {
-                        .logo {
-                        }
-                    }
-                    #switch {
-                        #switch:checked ~ ul {
-                        }
-                    }
-                    .burger {
-                        img {
-                        }
-                    }
-                    ul {
-                        li {
-                            a {
-                                img {
-                                }
-                            }
-                        }
-                    }
-                }
                 .big-over-title {
                     padding-top: 140px;
                     padding-bottom: 30px;
@@ -183,26 +164,14 @@ header {
         }
     }
 }
+
 @media (max-width: 1202px) {
     //! 940
-
     header {
         .gradient {
             .wrapper {
                 max-width: 940px;
                 nav {
-                    .a {
-                        .logo {
-                        }
-                    }
-                    #switch {
-                        #switch:checked ~ ul {
-                        }
-                    }
-                    .burger {
-                        img {
-                        }
-                    }
                     ul {
                         li {
                             margin-left: 20px;
@@ -255,18 +224,6 @@ header {
             .wrapper {
                 max-width: 600px;
                 nav {
-                    .a {
-                        .logo {
-                        }
-                    }
-                    #switch {
-                        #switch:checked ~ ul {
-                        }
-                    }
-                    .burger {
-                        img {
-                        }
-                    }
                     ul {
                         left: 250px;
                         li {
@@ -320,14 +277,7 @@ header {
             .wrapper {
                 max-width: 400px;
                 nav {
-                    .a {
-                        .logo {
-                        }
-                    }
-                    #switch {
-                        #switch:checked ~ ul {
-                        }
-                    }
+                    position: fixed;
                     .burger {
                         position: relative;
                         bottom: 35px;
@@ -337,8 +287,14 @@ header {
                         }
                     }
                     ul {
-                        left: 1510px;
+                        left: 180px;
+                        padding-left: 0px;
+                        display: none;
+                        bottom: 0px;
                         li {
+                            display: block;
+                            margin: 10px 0px;
+                            margin-left: 0px;
                             a {
                                 img {
                                 }
@@ -380,14 +336,6 @@ header {
             .wrapper {
                 max-width: 300px;
                 nav {
-                    .a {
-                        .logo {
-                        }
-                    }
-                    #switch {
-                        #switch:checked ~ ul {
-                        }
-                    }
                     .burger {
                         left: 250px;
                         img {
