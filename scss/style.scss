@@ -86,6 +86,7 @@ header {
                 display: inline-block;
                 padding: 12px 30px;
                 border: solid 2px $color-write;
+                font-family: $font-one;
                 text-transform: uppercase;
                 @include adaptiv-font(14, 8);
                 color: $color-write;

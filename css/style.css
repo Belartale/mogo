@@ -321,6 +321,7 @@ header .gradient .wrapper .btn-header {
   display: inline-block;
   padding: 12px 30px;
   border: solid 2px white;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
 }
