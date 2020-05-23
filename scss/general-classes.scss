@@ -64,6 +64,32 @@ $maxWidth: 1202;
         );
     }
 }
+@mixin story_about_us-img-hover() {
+    &:hover {
+        bottom: 10px;
+        right: 10px;
+    }
+    &:hover .story_about_us-img-in-block {
+        display: block;
+    }
+    .story_about_us-img-in-block {
+        display: none;
+        position: relative;
+        top: 35%;
+        img {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            @include adaptiv-font(18, 14);
+            font-family: $font-one;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-write;
+        }
+    }
+}
 
 //! @extend
 %over-title {

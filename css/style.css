@@ -192,10 +192,11 @@ header .gradient {
 }
 
 header .gradient .wrapper nav {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1000;
-  top: 30px;
-  position: absolute;
-  width: 100%;
 }
 
 header .gradient .wrapper nav .a .logo {
@@ -235,15 +236,13 @@ header .gradient .wrapper nav .burger img {
 }
 
 header .gradient .wrapper nav ul {
-  max-width: 1000px;
   position: relative;
-  bottom: 30px;
-  left: 450px;
+  left: 350px;
 }
 
 header .gradient .wrapper nav ul li {
   display: inline-block;
-  margin-left: 55px;
+  margin-left: 50px;
 }
 
 header .gradient .wrapper nav ul li a {
@@ -450,7 +449,7 @@ header .gradient .wrapper .lines-two-header div:hover {
     max-width: 600px;
   }
   header .gradient .wrapper nav ul {
-    left: 250px;
+    left: 130px;
   }
   header .gradient .wrapper nav ul li {
     margin-left: 10px;
@@ -478,6 +477,7 @@ header .gradient .wrapper .lines-two-header div:hover {
     max-width: 400px;
   }
   header .gradient .wrapper nav {
+    display: inline;
     position: fixed;
   }
   header .gradient .wrapper nav .burger {
@@ -487,14 +487,19 @@ header .gradient .wrapper .lines-two-header div:hover {
     display: block;
   }
   header .gradient .wrapper nav ul {
-    left: 180px;
+    left: 165px;
     padding-left: 0px;
     display: none;
     bottom: 0px;
   }
   header .gradient .wrapper nav ul li {
-    display: block;
-    margin: 10px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 25px 0px;
     margin-left: 0px;
   }
 }
@@ -505,6 +510,9 @@ header .gradient .wrapper .lines-two-header div:hover {
   }
   header .gradient .wrapper nav .burger {
     left: 250px;
+  }
+  header .gradient .wrapper nav ul {
+    left: 120px;
   }
 }
 
@@ -529,14 +537,6 @@ header .gradient .wrapper .lines-two-header div:hover {
   background-color: #95e1d3;
 }
 
-.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-in:hover {
-  position: relative;
-  bottom: 10px;
-  right: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat;
-  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat;
-}
-
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one {
   background: url(../img/story_about_us-img-one.png);
 }
@@ -544,6 +544,44 @@ header .gradient .wrapper .lines-two-header div:hover {
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one:hover {
   bottom: 10px;
   right: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one:hover .story_about_us-img-in-block {
+  display: block;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one .story_about_us-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one .story_about_us-img-in-block img {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one .story_about_us-img-in-block p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one .story_about_us-img-in-block p {
+    font-size: calc( 14px + 6.8 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one .story_about_us-img-in-block p {
+    font-size: calc( 14px + 4 * (100vw / 1202));
+  }
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/story_about_us-img-one.png);
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/story_about_us-img-one.png);
 }
@@ -555,6 +593,44 @@ header .gradient .wrapper .lines-two-header div:hover {
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two:hover {
   bottom: 10px;
   right: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two:hover .story_about_us-img-in-block {
+  display: block;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two .story_about_us-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two .story_about_us-img-in-block img {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two .story_about_us-img-in-block p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two .story_about_us-img-in-block p {
+    font-size: calc( 14px + 6.8 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two .story_about_us-img-in-block p {
+    font-size: calc( 14px + 4 * (100vw / 1202));
+  }
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/story_about_us-img-two.png);
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/story_about_us-img-two.png);
 }
@@ -566,6 +642,44 @@ header .gradient .wrapper .lines-two-header div:hover {
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three:hover {
   bottom: 10px;
   right: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three:hover .story_about_us-img-in-block {
+  display: block;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three .story_about_us-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three .story_about_us-img-in-block img {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three .story_about_us-img-in-block p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three .story_about_us-img-in-block p {
+    font-size: calc( 14px + 6.8 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three .story_about_us-img-in-block p {
+    font-size: calc( 14px + 4 * (100vw / 1202));
+  }
+}
+
+.story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/story_about_us-img-three.png);
   background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/story_about_us-img-three.png);
 }

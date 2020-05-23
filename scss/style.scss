@@ -10,10 +10,9 @@ header {
         background-position: center;
         .wrapper {
             nav {
+                padding-top: 30px;
+                display: flex;
                 z-index: 1000;
-                top: 30px;
-                position: absolute;
-                width: 100%;
                 .a {
                     .logo {
                         font: bold 30px $font-one;
@@ -37,13 +36,11 @@ header {
                     }
                 }
                 ul {
-                    max-width: 1000px;
                     position: relative;
-                    bottom: 30px;
-                    left: 450px;
+                    left: 350px;
                     li {
                         display: inline-block;
-                        margin-left: 55px;
+                        margin-left: 50px;
                         a {
                             text-transform: uppercase;
                             font-family: $font-one;
@@ -225,7 +222,7 @@ header {
                 max-width: 600px;
                 nav {
                     ul {
-                        left: 250px;
+                        left: 130px;
                         li {
                             margin-left: 10px;
                             a {
@@ -277,23 +274,23 @@ header {
             .wrapper {
                 max-width: 400px;
                 nav {
+                    display: inline;
                     position: fixed;
                     .burger {
                         position: relative;
                         bottom: 35px;
                         left: 350px;
                         display: block;
-                        img {
-                        }
                     }
                     ul {
-                        left: 180px;
+                        left: 165px;
                         padding-left: 0px;
                         display: none;
                         bottom: 0px;
                         li {
-                            display: block;
-                            margin: 10px 0px;
+                            justify-content: center;
+                            display: flex;
+                            margin: 25px 0px;
                             margin-left: 0px;
                             a {
                                 img {
@@ -342,11 +339,8 @@ header {
                         }
                     }
                     ul {
+                        left: 120px;
                         li {
-                            a {
-                                img {
-                                }
-                            }
                         }
                     }
                 }
@@ -386,24 +380,16 @@ header {
         .story_about_us-img {
             display: flex;
             justify-content: space-between;
-            ////////////////////////todo 380
             .story_about_us-img-behind {
                 margin: 0px 15px;
                 height: 250px;
                 width: 380px;
                 background-color: $color-blue;
-                .story_about_us-img-in:hover {
-                    position: relative;
-                    bottom: 10px;
-                    right: 10px;
-                    background: $gradient;
-                }
                 .story_about_us-img-one {
                     @extend %story_about_us-img-in;
                     background: url(../img/story_about_us-img-one.png);
+                    @include story_about_us-img-hover();
                     &:hover {
-                        bottom: 10px;
-                        right: 10px;
                         background: $gradient,
                             url(../img/story_about_us-img-one.png);
                     }
@@ -411,9 +397,8 @@ header {
                 .story_about_us-img-two {
                     @extend %story_about_us-img-in;
                     background: url(../img/story_about_us-img-two.png);
+                    @include story_about_us-img-hover();
                     &:hover {
-                        bottom: 10px;
-                        right: 10px;
                         background: $gradient,
                             url(../img/story_about_us-img-two.png);
                     }
@@ -421,9 +406,8 @@ header {
                 .story_about_us-img-three {
                     @extend %story_about_us-img-in;
                     background: url(../img/story_about_us-img-three.png);
+                    @include story_about_us-img-hover();
                     &:hover {
-                        bottom: 10px;
-                        right: 10px;
                         background: $gradient,
                             url(../img/story_about_us-img-three.png);
                     }
@@ -455,20 +439,6 @@ header {
                 ////////////////////////todo 380
                 .story_about_us-img-behind {
                     height: 125px;
-                    .story_about_us-img-in:hover {
-                    }
-                    .story_about_us-img-one {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-two {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-three {
-                        &:hover {
-                        }
-                    }
                 }
             }
         }
@@ -488,20 +458,6 @@ header {
                     margin: 30px auto;
                     width: 380px;
                     height: 250px;
-                    .story_about_us-img-in:hover {
-                    }
-                    .story_about_us-img-one {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-two {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-three {
-                        &:hover {
-                        }
-                    }
                 }
             }
         }
@@ -519,20 +475,6 @@ header {
                     margin: 15px auto;
                     width: 200px;
                     height: 150px;
-                    .story_about_us-img-in:hover {
-                    }
-                    .story_about_us-img-one {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-two {
-                        &:hover {
-                        }
-                    }
-                    .story_about_us-img-three {
-                        &:hover {
-                        }
-                    }
                 }
             }
         }
