@@ -1,130 +1,35 @@
 @import "null-style.scss"; //Сброс стилей
 @import "general-classes.scss"; //Все классы
 
-//! amazing_services
-.amazing_services {
+//! unique_design
+.unique_design {
     padding-top: 110px;
-    padding-bottom: 120px;
+    background: url(../img/unique_design-background.png);
+    background-size: cover;
+    background-position: center;
     .wrapper {
-        .amazing_services-grid-indent {
-            margin-top: 65px;
-            .amazing_services-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 175px;
-                grid-column-gap: 70px;
-                .amazing_services-grid-inside {
-                    margin-top: 50px;
-                    img {
-                        margin-top: 10px;
-                        margin-bottom: 100px;
-                        margin-right: 25px;
-                        float: left;
-                    }
-                }
-            }
-            .amazing_services-grid-between {
-                width: 100%;
-                height: 1px;
-                background-color: #e5e5e5;
-            }
+        .unique_design-tablet {
+            display: inline-block;
+            position: relative;
+            top: 100px;
+            transform: translate(60%, 0%);
+        }
+        .unique_design-phone {
+            display: inline-block;
+            position: relative;
+            transform: translate(60%, 10%);
         }
     }
 }
+
 //! @media
 @media (max-width: 1370px) {
-    .amazing_services {
-        .wrapper {
-            max-width: 1202px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    .amazing_services-grid-inside {
-                        img {
-                        }
-                    }
-                }
-                .amazing_services-grid-between {
-                }
-            }
-        }
-    }
 }
 @media (max-width: 1202px) {
-    .amazing_services {
-        padding-top: 70px;
-        padding-bottom: 90px;
-        .wrapper {
-            max-width: 940px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    .amazing_services-grid-inside {
-                        img {
-                        }
-                    }
-                }
-                .amazing_services-grid-between {
-                }
-            }
-        }
-    }
 }
 @media (max-width: 940px) {
-    .amazing_services {
-        padding-top: 50px;
-        padding-bottom: 70px;
-        .wrapper {
-            max-width: 640px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    grid-template-columns: 1fr;
-                    justify-items: center;
-                    grid-template-rows: 60px;
-                    grid-column-gap: 0px;
-                    .amazing_services-grid-inside {
-                        margin-top: 0px;
-                        img {
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-                .amazing_services-grid-between {
-                    display: none;
-                }
-            }
-        }
-    }
 }
 @media (max-width: 640px) {
-    .amazing_services {
-        .wrapper {
-            max-width: 470px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    .amazing_services-grid-inside {
-                        img {
-                        }
-                    }
-                }
-                .amazing_services-grid-between {
-                }
-            }
-        }
-    }
 }
 @media (max-width: 470px) {
-    .amazing_services {
-        .wrapper {
-            max-width: 200px;
-            .amazing_services-grid-indent {
-                .amazing_services-grid {
-                    .amazing_services-grid-inside {
-                        img {
-                        }
-                    }
-                }
-                .amazing_services-grid-between {
-                }
-            }
-        }
-    }
 }

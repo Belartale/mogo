@@ -215,93 +215,24 @@ select {
   }
 }
 
-.amazing_services {
+.unique_design {
   padding-top: 110px;
-  padding-bottom: 120px;
+  background: url(../img/unique_design-background.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.amazing_services .wrapper .amazing_services-grid-indent {
-  margin-top: 65px;
+.unique_design .wrapper .unique_design-tablet {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  -webkit-transform: translate(60%, 0%);
+          transform: translate(60%, 0%);
 }
 
-.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 175px;
-      grid-template-rows: 175px;
-  grid-column-gap: 70px;
-}
-
-.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside {
-  margin-top: 50px;
-}
-
-.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside img {
-  margin-top: 10px;
-  margin-bottom: 100px;
-  margin-right: 25px;
-  float: left;
-}
-
-.amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid-between {
-  width: 100%;
-  height: 1px;
-  background-color: #e5e5e5;
-}
-
-@media (max-width: 1370px) {
-  .amazing_services .wrapper {
-    max-width: 1202px;
-  }
-}
-
-@media (max-width: 1202px) {
-  .amazing_services {
-    padding-top: 70px;
-    padding-bottom: 90px;
-  }
-  .amazing_services .wrapper {
-    max-width: 940px;
-  }
-}
-
-@media (max-width: 940px) {
-  .amazing_services {
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-  .amazing_services .wrapper {
-    max-width: 640px;
-  }
-  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    justify-items: center;
-    -ms-grid-rows: 60px;
-        grid-template-rows: 60px;
-    grid-column-gap: 0px;
-  }
-  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside {
-    margin-top: 0px;
-  }
-  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid .amazing_services-grid-inside img {
-    margin-bottom: 10px;
-  }
-  .amazing_services .wrapper .amazing_services-grid-indent .amazing_services-grid-between {
-    display: none;
-  }
-}
-
-@media (max-width: 640px) {
-  .amazing_services .wrapper {
-    max-width: 470px;
-  }
-}
-
-@media (max-width: 470px) {
-  .amazing_services .wrapper {
-    max-width: 200px;
-  }
+.unique_design .wrapper .unique_design-phone {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translate(60%, 10%);
+          transform: translate(60%, 10%);
 }
