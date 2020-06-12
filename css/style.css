@@ -215,87 +215,37 @@ select {
   }
 }
 
-.unique_design {
-  padding-top: 110px;
-  background: url(../img/unique_design-background.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.unique_design .wrapper .unique_design-tablet {
-  top: 5px;
-  left: 340px;
-  display: inline-block;
-  position: relative;
-}
-
-.unique_design .wrapper .unique_design-phone {
-  top: 60px;
-  left: 220px;
-  display: inline-block;
-  position: relative;
+.what_we_do {
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 @media (max-width: 1202px) {
-  .unique_design {
+  .what_we_do {
     padding-top: 70px;
   }
-  .unique_design .wrapper {
+  .what_we_do .wrapper {
     max-width: 940px;
-  }
-  .unique_design .wrapper .unique_design-tablet {
-    width: 400px;
-    left: 250px;
-  }
-  .unique_design .wrapper .unique_design-phone {
-    width: 250px;
-    left: 140px;
   }
 }
 
 @media (max-width: 940px) {
-  .unique_design {
+  .what_we_do {
     padding-top: 50px;
   }
-  .unique_design .wrapper {
+  .what_we_do .wrapper {
     max-width: 640px;
-  }
-  .unique_design .wrapper .unique_design-tablet {
-    width: 350px;
-    left: 120px;
-  }
-  .unique_design .wrapper .unique_design-phone {
-    width: 200px;
-    top: 40px;
-    left: 30px;
   }
 }
 
 @media (max-width: 640px) {
-  .unique_design .wrapper {
+  .what_we_do .wrapper {
     max-width: 470px;
-  }
-  .unique_design .wrapper .unique_design-tablet {
-    width: 250px;
-    left: 90px;
-  }
-  .unique_design .wrapper .unique_design-phone {
-    width: 150px;
-    left: 25px;
   }
 }
 
 @media (max-width: 470px) {
-  .unique_design .wrapper {
+  .what_we_do .wrapper {
     max-width: 200px;
-  }
-  .unique_design .wrapper .unique_design-tablet {
-    width: 125px;
-    left: 20px;
-  }
-  .unique_design .wrapper .unique_design-phone {
-    width: 70px;
-    top: 20px;
-    left: -10px;
   }
 }
