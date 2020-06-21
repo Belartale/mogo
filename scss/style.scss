@@ -7,9 +7,44 @@
     padding-top: 110px;
     padding-bottom: 120px;
     .wrapper {
-        .meet_our_team-grid {
+        .meet_our_team-img {
             display: grid;
-            grid-template-columns: repeat(3, 30px);
+            grid-template-columns: repeat(3, 380px);
+            grid-template-rows: repeat(2, 470px); //todo отрегу шир и вис
+            grid-gap: 30px;
+            .meet_our_team-img-behind {
+                background-color: $color-blue;
+                .meet_our_team-img-one {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-one.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient,
+                            url(../img/meet_our_team-img-one.png);
+                    }
+                }
+                .meet_our_team-img-two {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-two.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient,
+                            url(../img/meet_our_team-img-two.png);
+                    }
+                }
+                .meet_our_team-img-three {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-three.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient,
+                            url(../img/meet_our_team-img-three.png);
+                    }
+                }
+            }
         }
     }
 }

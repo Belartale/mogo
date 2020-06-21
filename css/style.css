@@ -198,6 +198,18 @@ select {
   }
 }
 
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .three-title {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -257,9 +269,88 @@ select {
   padding-bottom: 120px;
 }
 
-.meet_our_team .wrapper .meet_our_team-grid {
+.meet_our_team .wrapper .meet_our_team-img {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (30px)[3];
-      grid-template-columns: repeat(3, 30px);
+  -ms-grid-columns: (380px)[3];
+      grid-template-columns: repeat(3, 380px);
+  -ms-grid-rows: (470px)[2];
+      grid-template-rows: repeat(2, 470px);
+  grid-gap: 30px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind {
+  background-color: #95e1d3;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one {
+  background: url(../img/meet_our_team-img-one.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover .meet_our_team-img-in-block {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-one.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-one.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two {
+  background: url(../img/meet_our_team-img-two.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover .meet_our_team-img-in-block {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-two.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-two.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three {
+  background: url(../img/meet_our_team-img-three.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover .meet_our_team-img-in-block {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block {
+  display: none;
+  position: relative;
+  top: 35%;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-three.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-three.png);
 }
