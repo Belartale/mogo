@@ -29,24 +29,42 @@ $maxWidth: 1202;
 .inline-block {
     display: inline-block;
 }
+.hidden {
+    display: none;
+}
+.see {
+    display: block;
+}
 .line-under-title {
     margin: 0 auto;
-    margin-bottom: 45px;
     height: 3px;
     width: 60px;
     background-color: $color-red;
 }
+.line {
+    height: 3px;
+    width: 60px;
+    background-color: $color-red;
+}
+
+//! fonts
 .text-under-line {
     max-width: 960px;
     margin: 0px auto;
     padding: 0 50px;
-
+    padding-top: 40px;
     padding-bottom: 90px;
     @extend %text;
 }
-//! fonts
 .over-title {
     @extend %over-title;
+}
+.line-name {
+    @extend %over-title;
+    padding-bottom: 0px; //todo Не работает
+}
+.middle-text {
+    @extend %middle-text;
 }
 .title {
     @extend %title;
@@ -110,6 +128,7 @@ $maxWidth: 1202;
 %over-title {
     padding-bottom: 25px;
     font-family: $font-two;
+    font-weight: lighter;
     @include adaptiv-font(24, 16);
     color: $color-black;
 }
@@ -144,5 +163,11 @@ $maxWidth: 1202;
     font-weight: 400;
     font-family: $font-three;
     @include adaptiv-font(15, 10);
+    color: $color-gray;
+}
+%middle-text {
+    font-weight: 400;
+    font-family: $font-three;
+    @include adaptiv-font(24, 16);
     color: $color-gray;
 }
