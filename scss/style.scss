@@ -1,41 +1,214 @@
 @import "null-style.scss"; //Сброс стилей
-@import "general-classes.scss"; //Все классы
 
-//! what_we_do
-.what_we_do {
-    padding-top: 60px;
-    padding-bottom: 120px;
+//! $variables
+$font-one: "Montserrat", sans-serif;
+$font-two: "Kaushan Script", cursive;
+$font-three: "Roboto", sans-serif;
+
+$color-write: white;
+$color-black: black;
+$color-black-light: #333333;
+$color-red: #f38181;
+$color-yellow: #fce38a;
+$color-gray: #999999;
+$color-blue: #95e1d3;
+
+$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9))
+    no-repeat;
+//! all
+$maxWidth: 1202;
+/*
+1370 = 1202
+1202 = 940
+940 = 640
+640 = 470
+470 = 320
+*/
+.wrapper {
+    max-width: 1202px;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+.see {
+    display: block;
+}
+.line-under-title {
+    margin: 0 auto;
+    height: 3px;
+    width: 60px;
+    background-color: $color-red;
+}
+.line {
+    height: 3px;
+    width: 60px;
+    background-color: $color-red;
+}
+
+//! fonts
+.text-under-line {
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0 50px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    @extend %text;
+}
+.over-title {
+    @extend %over-title;
+}
+.line-name {
+    @extend %over-title;
+    padding-bottom: 0px; //todo Не работает
+}
+.middle-text {
+    @extend %middle-text;
+}
+.title {
+    @extend %title;
+    text-transform: uppercase;
+}
+.three-title {
+    @extend %three-title;
+}
+.three-text {
+    @extend %three-text;
+}
+.center {
+    text-align: center;
+}
+//! @mixim
+//$maxWidth: 1202;
+//@include adaptiv-font(max, min);
+
+@mixin adaptiv-font($pcSize, $modSize) {
+    $addSize: $pcSize - $modSize;
+    $addModSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(
+            #{$modSize + px} + #{$addModSize} * ((100vw - 320px) / #{$maxWidth})
+        );
+    }
+    @media (min-width: 767px) {
+        font-size: calc(
+            #{$modSize + px} + #{$addSize} * (100vw / #{$maxWidth})
+        );
+    }
+}
+@mixin story_about_us-img-hover() {
+    &:hover {
+        bottom: 10px;
+        right: 10px;
+    }
+    &:hover .story_about_us-img-in-block {
+        display: block;
+    }
+    .story_about_us-img-in-block {
+        display: none;
+        position: relative;
+        top: 35%;
+        img {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            @include adaptiv-font(18, 14);
+            font-family: $font-one;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-write;
+        }
+    }
+}
+
+//! @extend
+%over-title {
+    padding-bottom: 25px;
+    font-family: $font-two;
+    font-weight: lighter;
+    @include adaptiv-font(24, 16);
+    color: $color-black;
+}
+%title {
+    padding-bottom: 40px;
+    font-family: $font-one;
+    @include adaptiv-font(30, 20);
+    color: $color-black;
+}
+%text {
+    font-family: $font-three;
+    @include adaptiv-font(15, 10);
+    color: $color-gray;
+}
+%story_about_us-img-in {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    transition-duration: 1s;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+%three-title {
+    font-family: $font-one;
+    @include adaptiv-font(14, 9);
+    text-transform: uppercase;
+    color: $color-black-light;
+}
+%three-text {
+    font-weight: 400;
+    font-family: $font-three;
+    @include adaptiv-font(15, 10);
+    color: $color-gray;
+}
+%middle-text {
+    font-weight: 400;
+    font-family: $font-three;
+    @include adaptiv-font(24, 16);
+    color: $color-gray;
+}
+
+////////////////////////////////////////////////////////////////////
+//todooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+////////////////////////////////////////////////////////////////////
+
+//! chat_coment
+.chat_coment {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f8f8f8;
     .wrapper {
-        .what_we_do-two-half {
-            padding-top: 90px;
+        .chat_coment-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-column-gap: 30px;
-            grid-template-rows: 380px;
-            .what_we_do-half-one {
+            align-items: center;
+            grid-template-columns: 15px 1fr 15px;
+            grid-gap: 70px;
+            .chat_coment-arrow-left {
+                transform: rotate(90deg);
             }
-            .what_we_do-half-two {
-                details {
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    border: solid 1px #e5e5e5;
+            .chat_coment-arrow-right {
+                transform: rotate(-90deg);
+            }
+            .chat_coment-slider {
+                display: flex;
+                align-items: center;
+                img {
+                    //todo нужно зад прав w и h
+                    max-height: 130px;
+                    margin-right: 60px;
+                    border: solid 3px $color-blue;
+                    padding: 30px;
                 }
-                details summary::-webkit-details-marker {
-                    display: none;
-                }
-                summary {
-                    display: flex;
-                    align-items: center;
-                    img {
-                        margin-right: 5px;
+                .chat_coment-slider-one {
+                    .sa {
+                        display: flex; //todo забац в
                     }
-                }
-                p {
-                    //! max-height: 185px;
-                    //! overflow: auto;
-                    padding: 10px;
-                    border-top: solid 1px #e5e5e5;
-                    margin-top: 10px;
                 }
             }
         }
@@ -44,36 +217,52 @@
 
 //! @media
 @media (max-width: 1202px) {
-    .what_we_do {
-        padding-bottom: 90px;
+    .chat_coment {
+        padding-top: 60px;
+        padding-bottom: 60px;
         .wrapper {
             max-width: 940px;
         }
     }
 }
 @media (max-width: 940px) {
-    .what_we_do {
+    .chat_coment {
         padding-top: 50px;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
         .wrapper {
             max-width: 640px;
+            .chat_coment-grid {
+                grid-gap: 30px;
+                .chat_coment-slider {
+                    img {
+                        //todo нужно зад прав w и h
+                        max-height: 130px;
+                        margin-right: 20px;
+                        border: solid 3px $color-blue;
+                        padding: 30px;
+                    }
+                    .chat_coment-slider-one {
+                        .sa {
+                        }
+                    }
+                }
+            }
         }
     }
 }
 @media (max-width: 640px) {
-    .what_we_do {
+    .chat_coment {
         .wrapper {
             max-width: 470px;
-            .what_we_do-two-half {
-                padding-top: 60px;
-                grid-template-columns: 1fr;
-                grid-row-gap: 0px;
-                grid-template-rows: 350px;
-                .what_we_do-half-one {
-                }
-                .what_we_do-half-two {
-                    details {
-                        text-align: center;
+            .chat_coment-grid {
+                .chat_coment-slider {
+                    img {
+                        max-height: 130px;
+                        padding: 10px;
+                    }
+                    .chat_coment-slider-one {
+                        .sa {
+                        }
                     }
                 }
             }
@@ -81,11 +270,14 @@
     }
 }
 @media (max-width: 470px) {
-    .what_we_do {
+    .chat_coment {
         .wrapper {
-            max-width: 200px;
-            .what_we_do-two-half {
-                grid-template-rows: 170px;
+            max-width: 300px;
+            .chat_coment-grid {
+                .chat_coment-slider {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
