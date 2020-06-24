@@ -144,6 +144,18 @@ select {
   text-align: center;
 }
 
+.box-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .over-title, .line-name {
   padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;
@@ -199,6 +211,18 @@ select {
 }
 
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one, .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two, .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three {
   position: relative;
   bottom: 0px;
   right: 0px;
@@ -1357,6 +1381,18 @@ select {
   text-align: center;
 }
 
+.box-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .over-title, .line-name {
   padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;
@@ -1412,6 +1448,18 @@ select {
 }
 
 .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-one, .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-two, .story_about_us .wrapper .story_about_us-img .story_about_us-img-behind .story_about_us-img-three {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two, .meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three {
   position: relative;
   bottom: 0px;
   right: 0px;
@@ -2525,5 +2573,325 @@ header .gradient .wrapper .lines-two-header div:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.meet_our_team {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (380px)[3];
+      grid-template-columns: repeat(3, 380px);
+  -ms-grid-rows: 470px auto;
+      grid-template-rows: 470px auto;
+  grid-gap: 31px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind {
+  background-color: #95e1d3;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one {
+  background: url(../img/meet_our_team-img-one.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover .meet_our_team-img-in-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
+  margin: 0 auto;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div .meet_our_team-img-in-block-instagram-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover {
+  background-color: #f38181;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-no-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-hover {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-one:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-one.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-one.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two {
+  background: url(../img/meet_our_team-img-two.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover .meet_our_team-img-in-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
+  margin: 0 auto;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div .meet_our_team-img-in-block-instagram-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover {
+  background-color: #f38181;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-no-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-hover {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-two:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-two.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-two.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three {
+  background: url(../img/meet_our_team-img-three.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
+  bottom: 10px;
+  right: 10px;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover .meet_our_team-img-in-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (56px)[4];
+      grid-template-columns: repeat(4, 56px);
+  -ms-grid-rows: 56px;
+      grid-template-rows: 56px;
+  grid-gap: 1px;
+  margin: 0 auto;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fce38a;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div .meet_our_team-img-in-block-instagram-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover {
+  background-color: #f38181;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-no-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-no-hover {
+  display: none;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-facebook-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-twitter-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-print-hover,
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three .meet_our_team-img-in-block div:hover .meet_our_team-img-in-block-instagram-hover {
+  display: block;
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-three:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))) no-repeat, url(../img/meet_our_team-img-three.png);
+  background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)) no-repeat, url(../img/meet_our_team-img-three.png);
+}
+
+.meet_our_team .wrapper .meet_our_team-img .meet_our_team-img-behind .meet_our_team-img-in-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1370px) {
+  .meet_our_team .wrapper {
+    max-width: 1202px;
+  }
+}
+
+@media (max-width: 1202px) {
+  .meet_our_team .wrapper {
+    max-width: 970px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    -ms-grid-columns: (302px)[3];
+        grid-template-columns: repeat(3, 302px);
+    -ms-grid-rows: 350px auto;
+        grid-template-rows: 350px auto;
+  }
+}
+
+@media (max-width: 940px) {
+  .meet_our_team .wrapper {
+    max-width: 640px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    -ms-grid-columns: (192px)[3];
+        grid-template-columns: repeat(3, 192px);
+    -ms-grid-rows: 270px auto;
+        grid-template-rows: 270px auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .meet_our_team .wrapper {
+    max-width: 470px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    padding-left: 140px;
+    -ms-grid-columns: (192px)[1];
+        grid-template-columns: repeat(1, 192px);
+    -ms-grid-rows: 270px auto 270px auto 270px auto;
+        grid-template-rows: 270px auto 270px auto 270px auto;
+    grid-gap: 20px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(3) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(4) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(5) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .meet_our_team .wrapper .meet_our_team-img div:nth-of-type(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+}
+
+@media (max-width: 470px) {
+  .meet_our_team .wrapper {
+    max-width: 360px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    padding-left: 85px;
+  }
+}
+
+@media (max-width: 360px) {
+  .meet_our_team .wrapper {
+    max-width: 300px;
+  }
+  .meet_our_team .wrapper .meet_our_team-img {
+    padding-left: 55px;
   }
 }

@@ -55,6 +55,18 @@
   text-align: center;
 }
 
+.box-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .over-title, .line-name {
   padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;

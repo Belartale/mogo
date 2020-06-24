@@ -77,6 +77,11 @@ $maxWidth: 1202;
 .center {
     text-align: center;
 }
+.box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 //! @mixim
 //$maxWidth: 1202;
 //@include adaptiv-font(max, min);
@@ -129,13 +134,35 @@ $maxWidth: 1202;
         grid-template-columns: repeat(4, 56px);
         grid-template-rows: 56px;
         grid-gap: 1px;
+        margin: 0 auto;
     }
     .meet_our_team-img-in-block {
         display: none;
         div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $color-yellow;
+            .meet_our_team-img-in-block-facebook-hover,
+            .meet_our_team-img-in-block-twitter-hover,
+            .meet_our_team-img-in-block-print-hover,
+            .meet_our_team-img-in-block-instagram-hover {
+                display: none;
+            }
             &:hover {
                 background-color: $color-red;
+                .meet_our_team-img-in-block-facebook-no-hover,
+                .meet_our_team-img-in-block-twitter-no-hover,
+                .meet_our_team-img-in-block-print-no-hover,
+                .meet_our_team-img-in-block-instagram-no-hover {
+                    display: none;
+                }
+                .meet_our_team-img-in-block-facebook-hover,
+                .meet_our_team-img-in-block-twitter-hover,
+                .meet_our_team-img-in-block-print-hover,
+                .meet_our_team-img-in-block-instagram-hover {
+                    display: block;
+                }
             }
         }
     }

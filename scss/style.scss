@@ -1094,6 +1094,7 @@ header {
         }
     }
 }
+
 //! story_about_us
 .story_about_us {
     margin-top: 90px;
@@ -1744,6 +1745,138 @@ header {
                     display: flex;
                     flex-direction: column;
                 }
+            }
+        }
+    }
+}
+
+//! meet_our_team
+.meet_our_team {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    .wrapper {
+        .meet_our_team-img {
+            display: grid;
+            grid-template-columns: repeat(3, 380px);
+            grid-template-rows: 470px auto; //todo отрегу шир и вис
+            grid-gap: 31px;
+            .meet_our_team-img-behind {
+                background-color: $color-blue;
+                .meet_our_team-img-one {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-one.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient, url(../img/meet_our_team-img-one.png);
+                    }
+                }
+                .meet_our_team-img-two {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-two.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient, url(../img/meet_our_team-img-two.png);
+                    }
+                }
+                .meet_our_team-img-three {
+                    @extend %meet_our_team-img-in;
+                    background: url(../img/meet_our_team-img-three.png);
+                    @include meet_our_team-img-hover();
+
+                    &:hover {
+                        background: $gradient, url(../img/meet_our_team-img-three.png);
+                    }
+                }
+                .meet_our_team-img-in-block {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+//! @media
+@media (max-width: 1370px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 1202px;
+        }
+    }
+}
+@media (max-width: 1202px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 970px;
+            .meet_our_team-img {
+                grid-template-columns: repeat(3, 302px);
+                grid-template-rows: 350px auto;
+            }
+        }
+    }
+}
+@media (max-width: 940px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 640px;
+            .meet_our_team-img {
+                grid-template-columns: repeat(3, 192px);
+                grid-template-rows: 270px auto;
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 470px;
+            .meet_our_team-img {
+                padding-left: 140px;
+                grid-template-columns: repeat(1, 192px);
+                grid-template-rows: 270px auto 270px auto 270px auto;
+                grid-gap: 20px;
+                div:nth-of-type(1) {
+                    order: 1;
+                }
+                div:nth-of-type(2) {
+                    order: 3;
+                }
+                div:nth-of-type(3) {
+                    order: 5;
+                }
+                div:nth-of-type(4) {
+                    order: 2;
+                }
+                div:nth-of-type(5) {
+                    order: 4;
+                }
+                div:nth-of-type(6) {
+                    order: 6;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 470px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 360px;
+            .meet_our_team-img {
+                padding-left: 85px;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .meet_our_team {
+        .wrapper {
+            max-width: 300px;
+            .meet_our_team-img {
+                padding-left: 55px;
             }
         }
     }
