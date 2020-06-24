@@ -14,9 +14,22 @@
   display: inline-block;
 }
 
+.hidden {
+  display: none;
+}
+
+.see {
+  display: block;
+}
+
 .line-under-title {
   margin: 0 auto;
-  margin-bottom: 45px;
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+}
+
+.line {
   height: 3px;
   width: 60px;
   background-color: #f38181;
@@ -26,7 +39,12 @@
   max-width: 960px;
   margin: 0px auto;
   padding: 0 50px;
+  padding-top: 40px;
   padding-bottom: 90px;
+}
+
+.line-name {
+  padding-bottom: 0px;
 }
 
 .title {
@@ -37,21 +55,22 @@
   text-align: center;
 }
 
-.over-title {
+.over-title, .line-name {
   padding-bottom: 25px;
   font-family: "Kaushan Script", cursive;
+  font-weight: lighter;
   color: black;
 }
 
 @media (max-width: 767px) {
-  .over-title {
-    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
+  .over-title, .line-name {
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
-  .over-title {
-    font-size: calc( 16px + 8 * (100vw / 1202));
+  .over-title, .line-name {
+    font-size: calc(16px + 8 * (100vw / 1202));
   }
 }
 
@@ -63,13 +82,13 @@
 
 @media (max-width: 767px) {
   .title {
-    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title {
-    font-size: calc( 20px + 10 * (100vw / 1202));
+    font-size: calc(20px + 10 * (100vw / 1202));
   }
 }
 
@@ -80,31 +99,32 @@
 
 @media (max-width: 767px) {
   .text-under-line {
-    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .text-under-line {
-    font-size: calc( 10px + 5 * (100vw / 1202));
+    font-size: calc(10px + 5 * (100vw / 1202));
   }
 }
 
 .three-title {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   color: #333333;
 }
 
 @media (max-width: 767px) {
   .three-title {
-    font-size: calc( 9px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc(9px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .three-title {
-    font-size: calc( 9px + 5 * (100vw / 1202));
+    font-size: calc(9px + 5 * (100vw / 1202));
   }
 }
 
@@ -116,12 +136,30 @@
 
 @media (max-width: 767px) {
   .three-text {
-    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .three-text {
-    font-size: calc( 10px + 5 * (100vw / 1202));
+    font-size: calc(10px + 5 * (100vw / 1202));
+  }
+}
+
+.middle-text {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+}
+
+@media (max-width: 767px) {
+  .middle-text {
+    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+  }
+}
+
+@media (min-width: 767px) {
+  .middle-text {
+    font-size: calc(16px + 8 * (100vw / 1202));
   }
 }

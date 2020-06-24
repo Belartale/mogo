@@ -11,9 +11,7 @@ $color-yellow: #fce38a;
 $color-gray: #999999;
 $color-blue: #95e1d3;
 
-$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9))
-    no-repeat;
-//! all
+$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9)) no-repeat;
 $maxWidth: 1202;
 /*
 1370 = 1202
@@ -29,24 +27,42 @@ $maxWidth: 1202;
 .inline-block {
     display: inline-block;
 }
+.hidden {
+    display: none;
+}
+.see {
+    display: block;
+}
 .line-under-title {
     margin: 0 auto;
-    margin-bottom: 45px;
     height: 3px;
     width: 60px;
     background-color: $color-red;
 }
+.line {
+    height: 3px;
+    width: 60px;
+    background-color: $color-red;
+}
+
+//! fonts
 .text-under-line {
     max-width: 960px;
     margin: 0px auto;
     padding: 0 50px;
-
+    padding-top: 40px;
     padding-bottom: 90px;
     @extend %text;
 }
-//! fonts
 .over-title {
     @extend %over-title;
+}
+.line-name {
+    @extend %over-title;
+    padding-bottom: 0px; //todo Не работает
+}
+.middle-text {
+    @extend %middle-text;
 }
 .title {
     @extend %title;
@@ -69,14 +85,10 @@ $maxWidth: 1202;
     $addSize: $pcSize - $modSize;
     $addModSize: $addSize + $addSize * 0.7;
     @media (max-width: 767px) {
-        font-size: calc(
-            #{$modSize + px} + #{$addModSize} * ((100vw - 320px) / #{$maxWidth})
-        );
+        font-size: calc(#{$modSize + px} + #{$addModSize} * ((100vw - 320px) / #{$maxWidth}));
     }
     @media (min-width: 767px) {
-        font-size: calc(
-            #{$modSize + px} + #{$addSize} * (100vw / #{$maxWidth})
-        );
+        font-size: calc(#{$modSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     }
 }
 @mixin story_about_us-img-hover() {
@@ -106,10 +118,34 @@ $maxWidth: 1202;
     }
 }
 
+@mixin meet_our_team-img-hover() {
+    &:hover {
+        bottom: 10px;
+        right: 10px;
+    }
+    &:hover .meet_our_team-img-in-block {
+        //display: block;
+        display: grid;
+        grid-template-columns: repeat(4, 56px);
+        grid-template-rows: 56px;
+        grid-gap: 1px;
+    }
+    .meet_our_team-img-in-block {
+        display: none;
+        div {
+            background-color: $color-yellow;
+            &:hover {
+                background-color: $color-red;
+            }
+        }
+    }
+}
+
 //! @extend
 %over-title {
     padding-bottom: 25px;
     font-family: $font-two;
+    font-weight: lighter;
     @include adaptiv-font(24, 16);
     color: $color-black;
 }
@@ -134,9 +170,20 @@ $maxWidth: 1202;
     background-size: cover;
     background-position: center;
 }
+%meet_our_team-img-in {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    transition-duration: 1s;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
 %three-title {
     font-family: $font-one;
     @include adaptiv-font(14, 9);
+    font-weight: bold; //todo доб может косяк?, надо глянуть в блоке Amazing Services как там норм?
     text-transform: uppercase;
     color: $color-black-light;
 }
@@ -144,5 +191,11 @@ $maxWidth: 1202;
     font-weight: 400;
     font-family: $font-three;
     @include adaptiv-font(15, 10);
+    color: $color-gray;
+}
+%middle-text {
+    font-weight: 400;
+    font-family: $font-three;
+    @include adaptiv-font(24, 16);
     color: $color-gray;
 }
