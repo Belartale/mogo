@@ -114,7 +114,11 @@ header {
                     max-width: 260px;
                     background-color: $color-write;
                     &:hover {
-                        background: linear-gradient(90deg, $color-red 35%, $color-write 0px);
+                        background: linear-gradient(
+                            90deg,
+                            $color-red 35%,
+                            $color-write 0px
+                        );
                     }
                 }
             }
@@ -310,7 +314,8 @@ header {
                     background: url(../img/story_about_us-img-one.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-one.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-one.png);
                     }
                 }
                 .story_about_us-img-two {
@@ -318,7 +323,8 @@ header {
                     background: url(../img/story_about_us-img-two.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-two.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-two.png);
                     }
                 }
                 .story_about_us-img-three {
@@ -326,7 +332,8 @@ header {
                     background: url(../img/story_about_us-img-three.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-three.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-three.png);
                     }
                 }
             }
@@ -905,7 +912,11 @@ header {
                     max-width: 260px;
                     background-color: $color-write;
                     &:hover {
-                        background: linear-gradient(90deg, $color-red 35%, $color-write 0px);
+                        background: linear-gradient(
+                            90deg,
+                            $color-red 35%,
+                            $color-write 0px
+                        );
                     }
                 }
             }
@@ -1113,7 +1124,8 @@ header {
                     background: url(../img/story_about_us-img-one.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-one.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-one.png);
                     }
                 }
                 .story_about_us-img-two {
@@ -1121,7 +1133,8 @@ header {
                     background: url(../img/story_about_us-img-two.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-two.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-two.png);
                     }
                 }
                 .story_about_us-img-three {
@@ -1129,7 +1142,8 @@ header {
                     background: url(../img/story_about_us-img-three.png);
                     @include story_about_us-img-hover();
                     &:hover {
-                        background: $gradient, url(../img/story_about_us-img-three.png);
+                        background: $gradient,
+                            url(../img/story_about_us-img-three.png);
                     }
                 }
             }
@@ -1768,7 +1782,8 @@ header {
                     @include meet_our_team-img-hover();
 
                     &:hover {
-                        background: $gradient, url(../img/meet_our_team-img-one.png);
+                        background: $gradient,
+                            url(../img/meet_our_team-img-one.png);
                     }
                 }
                 .meet_our_team-img-two {
@@ -1777,7 +1792,8 @@ header {
                     @include meet_our_team-img-hover();
 
                     &:hover {
-                        background: $gradient, url(../img/meet_our_team-img-two.png);
+                        background: $gradient,
+                            url(../img/meet_our_team-img-two.png);
                     }
                 }
                 .meet_our_team-img-three {
@@ -1786,7 +1802,8 @@ header {
                     @include meet_our_team-img-hover();
 
                     &:hover {
-                        background: $gradient, url(../img/meet_our_team-img-three.png);
+                        background: $gradient,
+                            url(../img/meet_our_team-img-three.png);
                     }
                 }
                 .meet_our_team-img-in-block {

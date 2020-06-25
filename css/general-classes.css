@@ -76,13 +76,13 @@
 
 @media (max-width: 767px) {
   .over-title, .line-name {
-    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .over-title, .line-name {
-    font-size: calc(16px + 8 * (100vw / 1202));
+    font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
 
@@ -94,13 +94,13 @@
 
 @media (max-width: 767px) {
   .title {
-    font-size: calc(20px + 17 * ((100vw - 320px) / 1202));
+    font-size: calc( 20px + 17 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .title {
-    font-size: calc(20px + 10 * (100vw / 1202));
+    font-size: calc( 20px + 10 * (100vw / 1202));
   }
 }
 
@@ -111,13 +111,13 @@
 
 @media (max-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .text-under-line {
-    font-size: calc(10px + 5 * (100vw / 1202));
+    font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }
 
@@ -130,13 +130,13 @@
 
 @media (max-width: 767px) {
   .three-title {
-    font-size: calc(9px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc( 9px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .three-title {
-    font-size: calc(9px + 5 * (100vw / 1202));
+    font-size: calc( 9px + 5 * (100vw / 1202));
   }
 }
 
@@ -148,13 +148,13 @@
 
 @media (max-width: 767px) {
   .three-text {
-    font-size: calc(10px + 8.5 * ((100vw - 320px) / 1202));
+    font-size: calc( 10px + 8.5 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .three-text {
-    font-size: calc(10px + 5 * (100vw / 1202));
+    font-size: calc( 10px + 5 * (100vw / 1202));
   }
 }
 
@@ -166,12 +166,12 @@
 
 @media (max-width: 767px) {
   .middle-text {
-    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1202));
+    font-size: calc( 16px + 13.6 * ((100vw - 320px) / 1202));
   }
 }
 
 @media (min-width: 767px) {
   .middle-text {
-    font-size: calc(16px + 8 * (100vw / 1202));
+    font-size: calc( 16px + 8 * (100vw / 1202));
   }
 }
