@@ -8,9 +8,10 @@
     .wrapper {
         max-width: $maxWidth;
         .some_of_our_work-grid {
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(4, auto);
-            grid-template-rows: auto auto;
+            grid-template-rows: 390px 390px;
             .target {
                 grid-column-start: 3;
                 grid-column-end: 4;
@@ -26,14 +27,24 @@
                 @extend %backg-center;
             }
             div:nth-of-type(3) {
+                background-image: url(../img/some_of_our_work-medusa.png);
+                @extend %backg-center;
             }
             div:nth-of-type(4) {
+                background-image: url(../img/some_of_our_work-ceiling.png);
+                @extend %backg-center;
             }
             div:nth-of-type(5) {
+                background-image: url(../img/some_of_our_work-bridge.png);
+                @extend %backg-center;
             }
             div:nth-of-type(6) {
+                background-image: url(../img/some_of_our_work-open-roof.png);
+                @extend %backg-center;
             }
             div:nth-of-type(7) {
+                background-image: url(../img/some_of_our_work-high-rise.png);
+                @extend %backg-center;
             }
         }
     }

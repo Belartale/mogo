@@ -265,7 +265,7 @@ select {
   }
 }
 
-.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(1), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(2) {
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(1), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(2), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(3), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(4), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(5), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(6), .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(7) {
   background-size: cover;
   background-position: center;
 }
@@ -280,12 +280,13 @@ select {
 }
 
 .some_of_our_work .wrapper .some_of_our_work-grid {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  -ms-grid-rows: 390px 390px;
+      grid-template-rows: 390px 390px;
 }
 
 .some_of_our_work .wrapper .some_of_our_work-grid .target {
@@ -303,6 +304,26 @@ select {
 
 .some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(2) {
   background-image: url(../img/some_of_our_work-roof.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(3) {
+  background-image: url(../img/some_of_our_work-medusa.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(4) {
+  background-image: url(../img/some_of_our_work-ceiling.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(5) {
+  background-image: url(../img/some_of_our_work-bridge.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(6) {
+  background-image: url(../img/some_of_our_work-open-roof.png);
+}
+
+.some_of_our_work .wrapper .some_of_our_work-grid div:nth-of-type(7) {
+  background-image: url(../img/some_of_our_work-high-rise.png);
 }
 
 @media (max-width: 1202px) {
