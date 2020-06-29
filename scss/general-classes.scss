@@ -12,8 +12,7 @@ $color-light-gray: #f8f8f8;
 $color-gray: #999999;
 $color-blue: #95e1d3;
 
-$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9))
-    no-repeat;
+$gradient: linear-gradient(rgba($color-red, 0.9), rgba($color-yellow, 0.9)) no-repeat;
 $maxWidth: 1202;
 /*
 1370 = 1202
@@ -106,14 +105,10 @@ $maxWidth: 1202;
     $addSize: $pcSize - $modSize;
     $addModSize: $addSize + $addSize * 0.7;
     @media (max-width: 767px) {
-        font-size: calc(
-            #{$modSize + px} + #{$addModSize} * ((100vw - 320px) / #{$maxWidth})
-        );
+        font-size: calc(#{$modSize + px} + #{$addModSize} * ((100vw - 320px) / #{$maxWidth}));
     }
     @media (min-width: 767px) {
-        font-size: calc(
-            #{$modSize + px} + #{$addSize} * (100vw / #{$maxWidth})
-        );
+        font-size: calc(#{$modSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     }
 }
 

@@ -1,22 +1,22 @@
 @import "null-style.scss"; //Сброс стилей
 @import "general-classes.scss"; //Все классы
 
-//! chat_coment_twoo-img-coment.png
-.chat_coment_twoo {
+//! latest_blog
+.latest_blog {
     padding-top: 110px;
     padding-bottom: 120px;
     .wrapper {
-        .chat_coment_twoo-grid {
+        .latest_blog-grid {
             padding-top: 50px;
             display: grid;
             grid-template-columns: repeat(3, 380px);
             grid-template-rows: 240px auto;
             grid-column-gap: 30px;
             grid-row-gap: 20px;
-            .chat_coment_twoo-grid-cell:nth-of-type(1) {
-                background-image: url(../img/chat_coment_twoo-img-girl.png);
+            .latest_blog-grid-cell:nth-of-type(1) {
+                background-image: url(../img/latest_blog-img-girl.png);
                 @extend %backg-center;
-                .chat_coment_twoo-square {
+                .latest_blog-square {
                     position: relative;
                     top: 160px;
                     right: 10px;
@@ -32,18 +32,18 @@
                     }
                 }
             }
-            .chat_coment_twoo-grid-cell:nth-of-type(2) {
-                @extend .chat_coment_twoo-grid-cell:nth-of-type(1);
-                background-image: url(../img/chat_coment_twoo-img-pc.png);
+            .latest_blog-grid-cell:nth-of-type(2) {
+                @extend .latest_blog-grid-cell:nth-of-type(1);
+                background-image: url(../img/latest_blog-img-pc.png);
                 @extend %backg-center;
             }
-            .chat_coment_twoo-grid-cell:nth-of-type(3) {
-                @extend .chat_coment_twoo-grid-cell:nth-of-type(1);
-                background-image: url(../img/chat_coment_twoo-img-man.png);
+            .latest_blog-grid-cell:nth-of-type(3) {
+                @extend .latest_blog-grid-cell:nth-of-type(1);
+                background-image: url(../img/latest_blog-img-man.png);
                 @extend %backg-center;
             }
-            .chat_coment_twoo-grid-cell:nth-of-type(4) {
-                .chat_coment_twoo-grid-hr {
+            .latest_blog-grid-cell:nth-of-type(4) {
+                .latest_blog-grid-hr {
                     margin-top: 20px;
                     margin-bottom: 20px;
                     height: 1px;
@@ -51,7 +51,7 @@
                     background-image: none;
                     background-color: #e5e5e5;
                 }
-                .chat_coment_twoo-grid-social {
+                .latest_blog-grid-social {
                     display: flex;
                     align-items: center;
                     img:nth-of-type(1) {
@@ -72,81 +72,81 @@
                     }
                 }
             }
-            .chat_coment_twoo-grid-cell:nth-of-type(5) {
-                @extend .chat_coment_twoo-grid-cell:nth-of-type(4);
+            .latest_blog-grid-cell:nth-of-type(5) {
+                @extend .latest_blog-grid-cell:nth-of-type(4);
             }
-            .chat_coment_twoo-grid-cell:nth-of-type(6) {
-                @extend .chat_coment_twoo-grid-cell:nth-of-type(4);
+            .latest_blog-grid-cell:nth-of-type(6) {
+                @extend .latest_blog-grid-cell:nth-of-type(4);
             }
         }
     }
 }
 //! @media
 @media (max-width: 1202px) {
-    .chat_coment_twoo {
+    .latest_blog {
         .wrapper {
             max-width: 970px;
-            .chat_coment_twoo-grid {
+            .latest_blog-grid {
                 grid-template-columns: repeat(3, 303px);
             }
         }
     }
 }
 @media (max-width: 940px) {
-    .chat_coment_twoo {
+    .latest_blog {
         padding-top: 70px;
         padding-bottom: 90px;
         .wrapper {
             max-width: 640px;
-            .chat_coment_twoo-grid {
+            .latest_blog-grid {
                 grid-template-columns: repeat(3, 193px);
                 grid-template-rows: 150px auto;
-                .chat_coment_twoo-grid-cell:nth-of-type(1) {
-                    background-image: url(../img/chat_coment_twoo-img-girl.png);
-                    .chat_coment_twoo-square {
+                .latest_blog-grid-cell:nth-of-type(1) {
+                    background-image: url(../img/latest_blog-img-girl.png);
+                    .latest_blog-square {
                         top: 70px;
                     }
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(2) {
-                    background-image: url(../img/chat_coment_twoo-img-pc.png);
+                .latest_blog-grid-cell:nth-of-type(2) {
+                    background-image: url(../img/latest_blog-img-pc.png);
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(3) {
-                    background-image: url(../img/chat_coment_twoo-img-man.png);
+                .latest_blog-grid-cell:nth-of-type(3) {
+                    background-image: url(../img/latest_blog-img-man.png);
                 }
             }
         }
     }
 }
 @media (max-width: 640px) {
-    .chat_coment_twoo {
+    .latest_blog {
         padding-top: 50px;
         padding-bottom: 70px;
         .wrapper {
             max-width: 470px;
-            .chat_coment_twoo-grid {
+            .latest_blog-grid {
                 grid-template-columns: repeat(1, auto);
                 grid-template-rows: repeat(3, 240px auto);
                 grid-column-gap: 0px;
                 grid-row-gap: 20px;
-                .chat_coment_twoo-grid-cell:nth-of-type(1) {
+                .latest_blog-grid-cell:nth-of-type(1) {
                     order: 1;
-                    .chat_coment_twoo-square {
+                    .latest_blog-square {
                         top: 160px;
                     }
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(2) {
+                .latest_blog-grid-cell:nth-of-type(2) {
                     order: 3;
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(3) {
+                .latest_blog-grid-cell:nth-of-type(3) {
                     order: 5;
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(4) {
+                .latest_blog-grid-cell:nth-of-type(4) {
                     order: 2;
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(5) {
+                .latest_blog-grid-cell:nth-of-type(5) {
                     order: 4;
                 }
-                .chat_coment_twoo-grid-cell:nth-of-type(6) {
+                .latest_blog-grid-cell:nth-of-type(6) {
                     order: 6;
                 }
             }
@@ -154,23 +154,23 @@
     }
 }
 @media (max-width: 470px) {
-    .chat_coment_twoo {
+    .latest_blog {
         .wrapper {
             max-width: 360px;
-            .chat_coment_twoo-grid {
+            .latest_blog-grid {
             }
         }
     }
 }
 @media (max-width: 360px) {
-    .chat_coment_twoo {
+    .latest_blog {
         .wrapper {
             max-width: 300px;
-            .chat_coment_twoo-grid {
+            .latest_blog-grid {
                 grid-template-rows: repeat(3, 140px auto);
-                .chat_coment_twoo-grid-cell:nth-of-type(1) {
+                .latest_blog-grid-cell:nth-of-type(1) {
                     order: 1;
-                    .chat_coment_twoo-square {
+                    .latest_blog-square {
                         top: 60px;
                     }
                 }
