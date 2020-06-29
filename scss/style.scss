@@ -1,88 +1,50 @@
 @import "null-style.scss"; //Сброс стилей
 @import "general-classes.scss"; //Все классы
 
-//! what_people_say
-.what_people_say {
+//! chat_coment_twoo
+.chat_coment_twoo {
     padding-top: 110px;
     padding-bottom: 120px;
-    background-image: url(../img/what_people_say-img-background.png);
-    @extend %backg-center;
     .wrapper {
-        position: relative;
-        margin: 0 auto;
-        .what_people_say-grid {
-            padding-top: 80px;
-            display: grid;
-            grid-template-columns: repeat(2, auto);
-            grid-template-rows: auto auto;
-            grid-column-gap: 80px;
-            grid-row-gap: 70px;
-            .what_people_say-grid-inside {
-                display: grid;
-                grid-template-columns: repeat(2, auto);
-                grid-column-gap: 30px;
-                img {
-                }
-                div {
-                    h4 {
-                        padding-top: 15px;
-                        padding-bottom: 15px;
-                    }
-                    p {
-                        padding-top: 25px;
-                    }
-                }
-            }
+        .chat_coment_twoo-grid {
         }
     }
 }
 //! @media
 @media (max-width: 1202px) {
-    .what_people_say {
+    .chat_coment_twoo {
         .wrapper {
             max-width: 970px;
-            .what_people_say-grid {
-            }
         }
     }
 }
 @media (max-width: 940px) {
-    .what_people_say {
+    .chat_coment_twoo {
         padding-top: 70px;
         padding-bottom: 90px;
         .wrapper {
             max-width: 640px;
-            .what_people_say-grid {
-            }
         }
     }
 }
 @media (max-width: 640px) {
-    .what_people_say {
+    .chat_coment_twoo {
         padding-top: 50px;
         padding-bottom: 70px;
         .wrapper {
             max-width: 470px;
-            .what_people_say-grid {
-                padding-top: 80px;
-                display: grid;
-                grid-template-columns: repeat(1, auto);
-                grid-template-rows: auto;
-                grid-column-gap: 0px;
-                grid-row-gap: 50px;
-            }
         }
     }
 }
 @media (max-width: 470px) {
-    .what_people_say {
+    .chat_coment_twoo {
         .wrapper {
             max-width: 360px;
         }
     }
 }
 @media (max-width: 360px) {
-    .what_people_say {
+    .chat_coment_twoo {
         .wrapper {
             max-width: 300px;
         }
