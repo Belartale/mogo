@@ -281,96 +281,64 @@ select {
   }
 }
 
-.what_people_say {
+.chat_coment_twoo .wrapper .chat_coment_twoo-grid div:nth-of-type(1) {
   background-size: cover;
   background-position: center;
 }
 
-.what_people_say {
+.chat_coment_twoo {
   padding-top: 110px;
   padding-bottom: 120px;
-  background-image: url(../img/what_people_say-img-background.png);
 }
 
-.what_people_say .wrapper {
-  position: relative;
-  margin: 0 auto;
-}
-
-.what_people_say .wrapper .what_people_say-grid {
-  padding-top: 80px;
+.chat_coment_twoo .wrapper .chat_coment_twoo-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  grid-column-gap: 80px;
-  grid-row-gap: 70px;
-}
-
-.what_people_say .wrapper .what_people_say-grid .what_people_say-grid-inside {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -ms-grid-rows: 300px;
+      grid-template-rows: 300px;
   grid-column-gap: 30px;
 }
 
-.what_people_say .wrapper .what_people_say-grid .what_people_say-grid-inside div h4 {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.what_people_say .wrapper .what_people_say-grid .what_people_say-grid-inside div p {
-  padding-top: 25px;
+.chat_coment_twoo .wrapper .chat_coment_twoo-grid div:nth-of-type(1) {
+  background-image: url(../img/chat_coment_twoo-img-girl.png);
 }
 
 @media (max-width: 1202px) {
-  .what_people_say .wrapper {
+  .chat_coment_twoo .wrapper {
     max-width: 970px;
   }
 }
 
 @media (max-width: 940px) {
-  .what_people_say {
+  .chat_coment_twoo {
     padding-top: 70px;
     padding-bottom: 90px;
   }
-  .what_people_say .wrapper {
+  .chat_coment_twoo .wrapper {
     max-width: 640px;
   }
 }
 
 @media (max-width: 640px) {
-  .what_people_say {
+  .chat_coment_twoo {
     padding-top: 50px;
     padding-bottom: 70px;
   }
-  .what_people_say .wrapper {
+  .chat_coment_twoo .wrapper {
     max-width: 470px;
-  }
-  .what_people_say .wrapper .what_people_say-grid {
-    padding-top: 80px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (auto)[1];
-        grid-template-columns: repeat(1, auto);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 50px;
   }
 }
 
 @media (max-width: 470px) {
-  .what_people_say .wrapper {
+  .chat_coment_twoo .wrapper {
     max-width: 360px;
   }
 }
 
 @media (max-width: 360px) {
-  .what_people_say .wrapper {
+  .chat_coment_twoo .wrapper {
     max-width: 300px;
   }
 }
